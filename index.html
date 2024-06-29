@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase 21 - Pseudoelementos</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio clase 21 DWFSH1-108 - Pseudoelementos CSS<br><br></h1>
+    </header>
+    <section>
+        <div class="definicion">
+            <ul>
+                <li><strong>Definición: </strong>Los pseudo-elementos se añaden a los selectores, pero en cambio,
+                    no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento.<br><br></li>
+                <li>En este ejercicio seleccionamos todos los pseudo-elementos que no necesiten JavaScript.<br></li>
+            </ul>
+        </div>
+        <!-- Lista de pseudo-elementos -->
+         <div class="lista">
+            <ol>
+                <!-- 1 - after -->
+                <li><a class="style-listas" href="#after">::after</a></li>
+                <!-- 2 - before -->
+                <li><a class="style-listas" href="#before">::before</a></li>
+                <!-- 3 - first-letter -->
+                <li><a class="style-listas" href="#first-letter">::first-letter</a></li>
+                <!-- 4 - first-line -->
+                <li><a class="style-listas" href="#first_line">::first-line</a></li>
+                <!-- 5 - selection -->
+                <li><a class="style-listas" href="#selection">::selection</a></li>
+                <!-- 6 - placeholder -->
+                <li><a class="style-listas" href="#placeholder">::placeholder</a></li>
+                <!-- 7 - marker -->
+                <li><a class="style-listas" href="#marker">::marker</a></li>
+                <!-- 8 - file-selector-button -->
+                <li><a class="style-listas" href="#file-selector">::file-selector-button</a></li>
+                <!-- 9 - grammar-error -->
+                <li><a class="style-listas" href="#grammar-error">::grammar-error</a></li>
+                <!-- 10 - spelling-error -->
+                <li><a class="style-listas" href="#spelling-error">::spelling-error</a></li>
+         </div>
+    </section>
+    <section>
+        <div class="anclas">
+            <ol>
+                <!-- 1 - after -->
+                <li class="style-titulos" id="after">::after</li>
+                <p>Crea un pseudo-elemento que es el último hijo del elemento seleccionado. 
+                Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.
+                Es en linea (inline) de forma predeterminada. <br><br></p>
+                <div>
+                    <p class="texto-aburrido">He aquí un texto sencillo y aburrido.</p>
+                    <p>He aquí un texto normal que no es ni aburrido ni emocionante.</p>
+                    <p class="texto-divertido">Estudiar programación es muy divertido.</p>
+                </div>
+                <br><br>
+                <!-- 2 - before -->
+                <li class="style-titulos" id="before">::before</li>
+                <p>Crea un pseudoelemento que es el primer hijo del elemento seleccionado. 
+                Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content.<br><br></p>
+                <q>Algunas citas</q>, dijo, <q>son mejores que ninguna.</q>
+                <br><br>
+                <!-- 3 - first-letter -->
+                <li class="style-titulos" id="first-letter">::first-letter</li>
+                <p>El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque, 
+                sólo cuando no es precedido de otro contenido (como imágenes o tablas). <br><br></p>
+                <p class="prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid adipisci commodi</p>
+                <p class="prueba">Albion Online es un mmorpg no lineal, en el que escribes tu propia historia sin limitarte a seguir un camino prefijado.</p>
+                <p class="prueba">Destornillador marca Philips de base plástica cubierta con resina epóxica y 
+                    acabados de franja amarilla punta plana de 1cm a base de hierro. <br><br></p>
+                <!-- 4 - first-line -->
+                <li class="style-titulos" id="first-line">::first-line</li>
+                <p>El Pseudoelemento ::first-line aplica estilos a la primera línea de un elemento de bloque. Nótese que la longitud de la primera línea
+                depende de muchos factores, incluyendo el ancho del elemento, el ancho del documento y el tamaño de fuente del texto. <br><br></p>
+                <div class="prueba1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid adipisci commodi</p>
+                    <p>Albion Online es un mmorpg no lineal, en el que escribes tu propia historia sin limitarte a seguir un camino prefijado.</p>
+                    <p>Destornillador marca Philips de base plástica cubierta con resina epóxica y 
+                        acabados de franja amarilla punta plana de 1cm a base de hierro. <br><br></p>
+                </div>
+                <!-- 5 - selection -->
+                <li class="style-titulos" id="selection">::selection</li>
+                <p>El pseudoelemento de CSS ::selection aplica estilos a la parte de un documento que ha sido resaltada por el usuario
+                (como hacer clic y arrastrar el ratón sobre el texto). <br><br></p>
+                <p class="prueba2">Saliendo de atrás, Cuadrado para levantar la pelota, viene Cuadrado, toca corto Cuadrado, dejoen barro atrás para Abel Aguilar <br><br></p>
+                <!-- 6 - placeholder -->
+                <li class="style-titulos" id="placeholder">::placeholder</li>
+                <p>El pseudo-elemento CSS ::placeholder representa el texto provisional en un elemento input o un elemento textarea. <br><br></p>
+                <input placeholder="Escribe aquí" />
+                <br><br>
+                <!-- 7 - marker -->
+                <li class="style-titulos" id="marker">::marker</li>
+                <p>El pseudo-elemento ::marker en CSS selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número.</p>
+                <ul class="lista1">
+                    <li>Duraznos</li>
+                    <li>Manzanas</li>
+                    <li>Ciruelas</li>
+                </ul>
+                <!-- 8 - file-selector-button -->
+                <li class="style-titulos" id="file-selector">::file-selector-button</li>
+                <p>El pseudoelemento CSS ::file-selector-button representa el botón de un input con el atributo type="file". <br><br></p>
+                <form>
+                    <label for="fileUpload">Subir archivo</label>
+                    <input type="file" id="fileUpload" />
+                </form>                  
+                <br>
+                <!-- 9 - grammar-error -->
+                <li class="style-titulos" id="grammar-error">::grammar-error</li>
+                <p>El pseudoelemento CSS ::grammar-error representa un segmento de texto que el agente de usuario ha marcado como gramaticalmente incorrecto. <br><br></p>
+                <p contenteditable spellcheck="true" >
+                    Aun con gripe salio a la calle.
+                </p>
+                <br>
+                <!-- 10 - spelling-error -->
+                <li class="style-titulos" id="spelling-error">::spelling-error</li>
+                <p>El pseudoelemento CSS ::spelling-error representa un segmento de texto que el agente de usuario ha marcado como incorrectamente escrito.</p>
+                <p contenteditable spellcheck="true">
+                    Ya no veo el sol en las maksofsnf como ayer <br>Y tu corazón lo siento lejano
+                </p>                  
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
